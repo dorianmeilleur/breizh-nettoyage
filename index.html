@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breizh Nettoyage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+      margin-top: 0.5em;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em 1em;
+    }
+    .services, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    input, textarea, button {
+      padding: 0.75em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Breizh Nettoyage</h1>
+    <p>Redonnez de l’éclat à votre véhicule, sans compromis.</p>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <h2>Bienvenue chez Breizh Nettoyage</h2>
+    <p>Nous vous proposons un service professionnel de nettoyage automobile, intérieur et extérieur, pour redonner tout son éclat à votre véhicule.</p>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Breizh Nettoyage, c’est une passion pour les voitures propres, le soin du détail, et la satisfaction client. Basé en Bretagne, nous venons à vous avec efficacité et professionnalisme.</p>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div>
+        <h3>Nettoyage Intérieur Complet</h3>
+        <p>Aspirateur, plastiques, vitres, sièges. Nettoyage en profondeur de l'habitacle.</p>
+      </div>
+      <div>
+        <h3>Nettoyage Extérieur</h3>
+        <p>Lavage à la main, jantes, pneus, finitions brillantes.</p>
+      </div>
+    </div>
+    <p><strong>Tarifs : sur devis personnalisé</strong></p>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?car,clean" alt="Avant nettoyage">
+      <img src="https://source.unsplash.com/400x300/?car,detailing" alt="Après nettoyage">
+    </div>
+  </section>
+
+  <section id="actualites">
+    <h2>Actualités</h2>
+    <p>Bientôt : lancement officiel de Breizh Nettoyage avec offres de bienvenue !</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Réservation</h2>
+    <form action="https://formsubmit.co/TON_EMAIL" method="POST">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre e-mail" required>
+      <textarea name="message" placeholder="Votre demande ou réservation" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p style="font-size: 0.9em; margin-top: 1em;">⚠️ Remplace "TON_EMAIL" dans le code par ton e-mail pour activer le formulaire.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Breizh Nettoyage – Tous droits réservés</p>
+  </footer>
+</body>
+</html>
 
